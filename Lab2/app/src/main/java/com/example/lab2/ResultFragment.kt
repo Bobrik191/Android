@@ -35,10 +35,10 @@ class ResultFragment : Fragment() {
         val textViewResult = view.findViewById<TextView>(R.id.textViewResult)
         val buttonCancel = view.findViewById<Button>(R.id.buttonCancel)
 
-        val productType = arguments?.getString(ARG_PRODUCT_TYPE) ?: "Не выбрано"
-        val brand = arguments?.getString(ARG_BRAND) ?: "Не выбрано"
+        val productType = arguments?.getString(ARG_PRODUCT_TYPE) ?: "Не обрано"
+        val brand = arguments?.getString(ARG_BRAND) ?: "Не обрано"
 
-        textViewResult.text = "Вы выбрали:\nТип: $productType\nФирма: $brand"
+        textViewResult.text = "Ви обрали:\nТип: $productType\nФірма: $brand"
 
         buttonCancel.setOnClickListener {
             listener?.onCancel()

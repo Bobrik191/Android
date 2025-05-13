@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Выберите тип товара:" />
+        android:text="Оберіть тип товару:" />
 
     <RadioGroup
         android:id="@+id/radioGroupProduct"
@@ -21,7 +21,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Выберите фирму:" />
+        android:text="Оберіть фірму:" />
 
     <RadioGroup
         android:id="@+id/radioGroupBrand"

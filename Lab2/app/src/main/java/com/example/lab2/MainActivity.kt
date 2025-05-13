@@ -26,9 +26,8 @@ class MainActivity : AppCompatActivity(), InputFragment.OnInputListener, ResultF
     }
 
     override fun onCancel() {
-        supportFragmentManager.popBackStack() // Удаляем ResultFragment
+        supportFragmentManager.popBackStack()
 
-        // Пересоздаем InputFragment, чтобы очистить данные
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_container, InputFragment())
             .commit()
