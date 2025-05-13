@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выберите тип товара:" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/radioProduct1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Телефон"/>
+        <RadioButton android:id="@+id/radioProduct2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ноутбук"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выберите фирму:" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupBrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/radioBrand1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Apple"/>
+        <RadioButton android:id="@+id/radioBrand2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Samsung"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK" />
+
+    <Button
+        android:id="@+id/buttonOpen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Відкрити"
+        android:layout_marginTop="8dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitleProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Виберіть тип товару:"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgProductType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleProduct"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbSmartphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Смартфон" />
+
+        <RadioButton
+            android:id="@+id/rbLaptop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ноутбук" />
+
+        <RadioButton
+            android:id="@+id/rbTablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Планшет" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvTitleCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Виберіть фірму:"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/rgProductType"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleCompany"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbSamsung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Samsung" />
+
+        <RadioButton
+            android:id="@+id/rbApple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apple" />
+
+        <RadioButton
+            android:id="@+id/rbLenovo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lenovo" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ОК"
+        app:layout_constraintTop_toBottomOf="@id/rgCompany"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"/>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        app:layout_constraintTop_toBottomOf="@id/rgCompany"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"/>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Результат вибору з'явиться тут"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/btnOk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
