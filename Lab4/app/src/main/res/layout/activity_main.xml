@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:padding="16dp">
+
+    <RadioGroup android:id="@+id/fileTypeGroup"
+        android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/audioRadio" android:text="Audio" android:checked="true"/>
+        <RadioButton android:id="@+id/videoRadio" android:text="Video"/>
+    </RadioGroup>
+
+    <Button android:id="@+id/chooseFileBtn" android:text="Choose Local File"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <EditText android:id="@+id/urlInput" android:hint="Enter media URL"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/loadFromUrlBtn" android:text="Load from URL"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <VideoView android:id="@+id/videoView"
+        android:layout_width="match_parent" android:layout_height="200dp"
+        android:visibility="gone"/>
+
+    <Button android:id="@+id/playBtn" android:text="Play"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/pauseBtn" android:text="Pause"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/stopBtn" android:text="Stop"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>
